@@ -6,11 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="BeanLifeCyleDemo" />
+        <module name="P02_SpringBootDemo2" />
+        <module name="P02_SpringBootDemo1" />
         <module name="BeanInitializationDemo" />
         <module name="CircularDependencyDemo" />
+        <module name="P01_Reusable_Payment" />
         <module name="BeanScopeDemo" />
-        <module name="BeanLifeCyleDemo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="P01_SpringDemo" target="17" />
+      <module name="ResuablePaymentLibrary" target="17" />
+      <module name="SpringBootCoreDemo" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="P01_Reusable_Payment" options="-parameters" />
+      <module name="P01_SpringDemo" options="-parameters" />
+      <module name="P02_SpringBootDemo1" options="-parameters" />
+      <module name="P02_SpringBootDemo2" options="-parameters" />
+      <module name="ResuablePaymentLibrary" options="-parameters" />
+      <module name="SpringBootCoreDemo" options="-parameters" />
+    </option>
   </component>
 </project>
