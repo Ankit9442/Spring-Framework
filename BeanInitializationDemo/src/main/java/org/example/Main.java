@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.service.OrderService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -10,5 +11,10 @@ public class Main {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
+        System.out.println("Order instance is created.");
+        OrderService order = context.getBean(OrderService.class);
+        System.out.println("Payment instance is not created.");
+        order.placeOrder();
+        System.out.println("Payment instance is  created.");
     }
 }
