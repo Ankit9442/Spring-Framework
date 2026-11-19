@@ -1,7 +1,5 @@
 package com.example.student_management.dto.response;
 
-import com.example.student_management.enums.StudentStatus;
-
 import java.time.Instant;
 import java.time.LocalDate;
 

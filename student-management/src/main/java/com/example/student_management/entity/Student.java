@@ -1,6 +1,5 @@
 package com.example.student_management.entity;
 
-import com.example.student_management.enums.StudentStatus;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
